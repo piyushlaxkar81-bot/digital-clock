@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Digital Clock</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <img id="timeImage"  class="clock-icon">
-    <div class="clock-container">
-        <img id="timeImage" clock-icon">
-    
-        <h1>Digital Clock</h1>
-        <div id="greeting"></div>
-        <div id="date"></div>
-        <div id="clock">00:00:00</div>
-    </div>
+    <head>
+        <title>Digital Clock</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <script src="script.js"></script>
+    <body>
+
+        <div class="main-container">
+
+            <!-- Image that changes with time -->
+            <img id="timeImage" src="images/sunrise.png" class="clock-icon">
+        </div>
+
+        <div class="clock-container">
+            <h1>Digital Clock</h1>
+
+            <div id="greeting"></div>
+            <div id="date"></div>
+            <div id="clock">00:00:00</div>
+
+        </div>
+
+            <!-- hindu panchang details-->
+            <div class="panchang-container">
+
+                <h2>🪔 हिन्दू पंचांग</h2>
+
+                <div class="panchang-row">
+                <span class="label">दिन</span>
+                <span id="day"></span>
+                </div>
+
+                <div class="panchang-row">
+                <span class="label">वार</span>
+                <span id="vaar"></span>
+                </div>
+
+                <div class="panchang-row">
+                <span class="label">तिथि</span>
+                <span id="tithi"></span>
+                </div>
+
+                <div class="panchang-row">
+                <span class="label">नक्षत्र</span>
+                <span id="nakshatra"></span>
+                </div>
+
+                <div class="panchang-row">
+                <span class="label">योग</span>
+                <span id="yoga"></span>
+                </div>
+
+                <div class="panchang-row">
+                <span class="label">करण</span>
+                <span id="karana"></span>
+                </div>
+
+                <div class="panchang-row">
+                <span class="label">पक्ष</span>
+                <span id="paksha"></span>
+                </div>
+
+                <div class="panchang-row">
+                <span class="label">सूर्योदय</span>
+                <span id="sunrise"></span>
+                </div>
+
+                <div class="panchang-row">
+                <span class="label">सूर्यास्त</span>
+                <span id="sunset"></span>
+                </div>
+
+                <div class="panchang-row">
+                <span class="label">स्थान</span>
+                <span id="location"></span>
+                </div>
+
+                <div class="panchang-row">
+                <span class="label">चन्द्र अवस्था</span>
+                <span id="moon"></span>
+                </div>
+
+                <div class="panchang-row">
+                <span class="label">त्योहार</span>
+                <span id="festival">None</span>
+                </div>
+             </div>
+        
+        
+        <script src="script.js"></script>
+
+    </body>
+</html>
+
+
+
